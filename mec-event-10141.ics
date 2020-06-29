@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-5c12a4bcabe8958990462298b5510893@sie.telkomuniversity.ac.id
+DTSTART:20200316T010000Z
+DTEND:20200325T110000Z
+DTSTAMP:20200311T085400Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Pelaksanaan UTS S2
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/pelaksanaan-uts-s2/
+ORGANIZER;CN=S2 Teknik Industri:MAILTO:
+CATEGORIES:Kalender Akademik,UTS
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/png:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/exam.png
+END:VEVENT
+END:VCALENDAR

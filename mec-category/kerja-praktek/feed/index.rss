@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+<channel>
+	<title>Kerja Praktek &#8211; School of Industrial and System Engineering</title>
+	<atom:link href="https://sie.telkomuniversity.ac.id/mec-category/kerja-praktek/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sie.telkomuniversity.ac.id</link>
+	<description>FRI Juara</description>
+	<lastBuildDate>Wed, 27 May 2020 03:49:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.6</generator>
+
+<image>
+	<url>https://sie.telkomuniversity.ac.id/wp-content/uploads/2017/05/cropped-1-32x32.png</url>
+	<title>Kerja Praktek &#8211; School of Industrial and System Engineering</title>
+	<link>https://sie.telkomuniversity.ac.id</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+    
+        <item>
+		<title>Presentasi Kerja Praktek</title>
+		<link>https://sie.telkomuniversity.ac.id/events/presentasi-kerja-praktek/?occurrence=2020-08-24</link>
+        
+        		<comments></comments>
+        
+		<pubDate>Mon, 24 Aug 2020 08:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[]]></dc:creator>
+
+		<guid isPermaLink="false">https://sie.telkomuniversity.ac.id/?post_type=mec-events&#038;p=10165</guid>
+
+        <description><![CDATA[]]></description>
+
+                <content:encoded><![CDATA[]]></content:encoded>
+        
+        		<wfw:commentRss>https://sie.telkomuniversity.ac.id/events/presentasi-kerja-praktek/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+                
+                	</item>
+    </channel>
+</rss>

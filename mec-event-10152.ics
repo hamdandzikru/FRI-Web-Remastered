@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-50698c07f91c611904a467b4892806a2@sie.telkomuniversity.ac.id
+DTSTART:20200604T010000Z
+DTEND:20200606T110000Z
+DTSTAMP:20200311T092000Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Pendaftaran Ujian Khusus TPB
+DESCRIPTION:Khusus untuk mahasiswa angkatan 2018
+URL:https://sie.telkomuniversity.ac.id/events/pendaftaran-ujian-khusus-tpb/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,Ujian Khusus
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/png:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/Level_II_FAQ_697.5x364.44.png
+END:VEVENT
+END:VCALENDAR

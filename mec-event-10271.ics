@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-1b5959f90b8e4966b8ea257c4352ebe9@sie.telkomuniversity.ac.id
+DTSTART:20200319T010000Z
+DTEND:20200319T110000Z
+DTSTAMP:20200319T062500Z
+CREATED:20200319
+LAST-MODIFIED:20200320
+SUMMARY:Workshop Penyusunan Konten CeLOE 2020
+DESCRIPTION:Kepada Bapak/Ibu dosen yang telah mendaftarkan diri untuk mengikuti Workshop Penyusunan Konten CeLOE 2020 silahkan mengisi nickname “user” sesuai Nama Lengkap masing-masing sebagai kebutuhan presensi kegiatan dan sertifikat keikutsertaan kegiatan workshop ini.
+ 
+Link Pendaftaran :
+bit.ly/workshopceloe2020
+Link Video Conference
+bit.ly/joinworkshopceloe2020
+Link Download Aplikasi Zoom
+https://zoom.us/download
+URL:https://sie.telkomuniversity.ac.id/events/workshop-penyusunan-konten-celoe-2020/
+ORGANIZER;CN=CeLOE:MAILTO:
+CATEGORIES:Kuliah Daring,Kuliah Online,Workshop
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/jpeg:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/Workshop-CeLOE-Dosen.jpeg
+END:VEVENT
+END:VCALENDAR

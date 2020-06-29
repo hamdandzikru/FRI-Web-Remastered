@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Pengumuman &#8211; School of Industrial and System Engineering</title>
+	<atom:link href="https://sie.telkomuniversity.ac.id/tag/pengumuman/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sie.telkomuniversity.ac.id</link>
+	<description>FRI Juara</description>
+	<lastBuildDate>Fri, 20 Mar 2020 04:43:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.6</generator>
+
+<image>
+	<url>https://sie.telkomuniversity.ac.id/wp-content/uploads/2017/05/cropped-1-32x32.png</url>
+	<title>Pengumuman &#8211; School of Industrial and System Engineering</title>
+	<link>https://sie.telkomuniversity.ac.id</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Pengumuman Jadwal Ujian Khusus</title>
+		<link>https://sie.telkomuniversity.ac.id/events/pengumuman-jadwal-ujian-khusus/</link>
+				<comments>https://sie.telkomuniversity.ac.id/events/pengumuman-jadwal-ujian-khusus/#respond</comments>
+				<pubDate>Wed, 11 Mar 2020 09:21:01 +0000</pubDate>
+		<dc:creator><![CDATA[wina setianingsih]]></dc:creator>
+				<category><![CDATA[FRIJUARA]]></category>
+		<category><![CDATA[JadwalUjianKhusus]]></category>
+		<category><![CDATA[KalenderAkademik]]></category>
+		<category><![CDATA[Pengumuman]]></category>
+		<category><![CDATA[UjianKhusus]]></category>
+
+		<guid isPermaLink="false">https://sie.telkomuniversity.ac.id/?post_type=mec-events&#038;p=10153</guid>
+				<description><![CDATA[]]></description>
+								<content:encoded><![CDATA[]]></content:encoded>
+							<wfw:commentRss>https://sie.telkomuniversity.ac.id/events/pengumuman-jadwal-ujian-khusus/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-d132c74defa34e9f47fd52b3dc69779c@sie.telkomuniversity.ac.id
+DTSTART:20200706T010000Z
+DTEND:20200717T110000Z
+DTSTAMP:20200311T094400Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Pelaksanaan Sidang Tugas Akhir Gelombang 3
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-tugas-akhir-gelombang-3/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,Sidang Tugas Akhir
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/png:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/presentation2.png
+END:VEVENT
+END:VCALENDAR

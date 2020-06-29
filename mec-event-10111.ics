@@ -1,0 +1,649 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-70bb83c9272e6c4bc6e83e0a55c7c9c3@sie.telkomuniversity.ac.id
+DTSTART:20200304T010000Z
+DTEND:20200305T110000Z
+DTSTAMP:20200218T083800Z
+CREATED:20200218
+LAST-MODIFIED:20200218
+SUMMARY:ICoIESE 2020
+DESCRIPTION:Category
+	Announcement
+	International Conference
+	Kalender Akademik
+	Kerja Praktek
+	Kuliah Daring
+	Kuliah Online
+	Pembekalan KP
+	Sidang Tugas Akhir
+	Sidang Yudisium
+	UAS
+	Ujian Khusus
+	Ujian Susulan
+	UTS
+	Workshop
+
+
+                    
+                    
+                    
+            
+        
+    
+                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-08",
+            "endDate" 		: "2020-06-17",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/ujian-akhir-semester-uas-s2/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/exam.png",
+            "name" 			: "Ujian Akhir Semester (UAS) S2",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/ujian-akhir-semester-uas-s2/?occurrence=2020-06-08"
+        }
+        
+                            
+                                    08 June - 17 June
+                                Gedung Karang
+                Monday
+            
+            
+                                Ujian Akhir Semester (UAS) S2
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-10",
+            "endDate" 		: "2020-06-11",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pengumuman-jadwal-ujian-khusus/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/announcement.jpg",
+            "name" 			: "Pengumuman Jadwal Ujian Khusus",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pengumuman-jadwal-ujian-khusus/?occurrence=2020-06-10"
+        }
+        
+                            
+                                    10 June - 11 June
+                                Gedung Karang
+                Wednesday
+            
+            
+                                Pengumuman Jadwal Ujian Khusus
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-15",
+            "endDate" 		: "2020-06-26",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-gelombang-2/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/sidang.jpg",
+            "name" 			: "Pelaksanaan Sidang Gelombang 2",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-gelombang-2/?occurrence=2020-06-15"
+        }
+        
+                            
+                                    15 June - 26 June
+                                Gedung Karang
+                Monday
+            
+            
+                                Pelaksanaan Sidang Gelombang 2
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                        
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-15",
+            "endDate" 		: "2020-06-19",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pelaksanaan-ujian-khusus/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/exam2.jpg",
+            "name" 			: "Pelaksanaan Ujian Khusus",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pelaksanaan-ujian-khusus/?occurrence=2020-06-15"
+        }
+        
+                            
+                                    15 June - 19 June
+                                Gedung Karang
+                Monday
+            
+            
+                                Pelaksanaan Ujian Khusus
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-19",
+            "endDate" 		: "2020-06-19",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-3/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/IMG_2107.jpg",
+            "name" 			: "Sidang Yudisium",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-3/?occurrence=2020-06-19"
+        }
+        
+                            
+                                    19 June
+                                Gedung Karang
+                Friday
+            
+            
+                                Sidang Yudisium
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-22",
+            "endDate" 		: "2020-06-24",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/uas-susulan-s2/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/exam.jpg",
+            "name" 			: "UAS Susulan S2",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/uas-susulan-s2/?occurrence=2020-06-22"
+        }
+        
+                            
+                                    22 June - 24 June
+                                Gedung Karang
+                Monday
+            
+            
+                                UAS Susulan S2
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-06-29",
+            "endDate" 		: "2020-06-30",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pendaftaran-sidang-tugas-akhir-gelombang-3/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/registration.jpg",
+            "name" 			: "Pendaftaran Sidang Tugas Akhir Gelombang 3",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pendaftaran-sidang-tugas-akhir-gelombang-3/?occurrence=2020-06-29"
+        }
+        
+                            
+                                    29 June - 30 June
+                                Gedung Karang
+                Monday
+            
+            
+                                Pendaftaran Sidang Tugas Akhir Gelombang 3
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-07-06",
+            "endDate" 		: "2020-07-17",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-tugas-akhir-gelombang-3/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/presentation2.png",
+            "name" 			: "Pelaksanaan Sidang Tugas Akhir Gelombang 3",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-tugas-akhir-gelombang-3/?occurrence=2020-07-06"
+        }
+        
+                            
+                                    06 July - 17 July
+                                Gedung Karang
+                Monday
+            
+            
+                                Pelaksanaan Sidang Tugas Akhir Gelombang 3
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-07-24",
+            "endDate" 		: "2020-07-24",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-4/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/IMG_2107.jpg",
+            "name" 			: "Sidang Yudisium",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-4/?occurrence=2020-07-24"
+        }
+        
+                            
+                                    24 July
+                                Gedung Karang
+                Friday
+            
+            
+                                Sidang Yudisium
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-08-03",
+            "endDate" 		: "2020-08-05",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pendaftaran-sidang-tugas-akhir-gelombang-4/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/pendaftaran-sidang.jpg",
+            "name" 			: "Pendaftaran Sidang Tugas Akhir Gelombang 4",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pendaftaran-sidang-tugas-akhir-gelombang-4/?occurrence=2020-08-03"
+        }
+        
+                            
+                                    03 August - 05 August
+                                Gedung Karang
+                Monday
+            
+            
+                                Pendaftaran Sidang Tugas Akhir Gelombang 4
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-08-10",
+            "endDate" 		: "2020-08-17",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-tugas-akhir-gelombang-4/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/presentation.jpg",
+            "name" 			: "Pelaksanaan Sidang Tugas Akhir Gelombang 4",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/pelaksanaan-sidang-tugas-akhir-gelombang-4/?occurrence=2020-08-10"
+        }
+        
+                            
+                                    10 August - 17 August
+                                Gedung Karang
+                Monday
+            
+            
+                                Pelaksanaan Sidang Tugas Akhir Gelombang 4
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                
+        {
+            "@context" 		: "http://schema.org",
+            "@type" 		: "Event",
+            "startDate" 	: "2020-08-21",
+            "endDate" 		: "2020-08-21",
+            "location" 		:
+            {
+                "@type" 		: "Place",
+                "name" 			: "Gedung Karang",
+                "image"			: "",
+                "address"		: ""
+            },
+            "offers": {
+                "url": "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-5/",
+                "price": "",
+                "priceCurrency" : "$"
+            },
+            "performer": "",
+            "description" 	: "",
+            "image" 		: "https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/IMG_2107.jpg",
+            "name" 			: "Sidang Yudisium",
+            "url"			: "https://sie.telkomuniversity.ac.id/events/sidang-yudisium-5/?occurrence=2020-08-21"
+        }
+        
+                            
+                                    21 August
+                                Gedung Karang
+                Friday
+            
+            
+                                Sidang Yudisium
+                                
+            
+            
+                View Detail
+                                
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                                                    
+                    
+                
+                            
+                                	
+
+
+    
+    
+        No event found!    
+        
+        Load More
+        
+Data analytics and computation
+Decision support system
+Artificial Intelligent
+Information Systems
+Database Systems
+Big data analytics
+Manufacturing, product design & Human Factors Engineering
+Mechanical Design and Manufacturing
+Safety and engineering Management
+Design and Manufacturing Engineering
+Industrial and Systems Engineering
+Computer Integrated Manufacturing
+Supply Chain and production engineering
+Transportation Engineering
+Production Planning and Control
+Supply chain and logistics engineering
+Production engineering and automation
+Operations Research
+All accepted papers will be published under in Scopus Indexed Proceeding (In Confirmation). The selected papers will be published in The International Journal of Integrated Engineering (IJIE), a Scopus indexed Journal.
+URL:http://icoiese.org/
+ORGANIZER;CN=School of Industrial Engineering:MAILTO:icoise@telkomuniversity.ac.id
+CATEGORIES:International Conference
+LOCATION:Kawasan Pariwisata Lot SW1, Nusa Dua Bali, 80363 Indonesia
+ATTACH;FMTTYPE=image/jpeg:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/02/unnamed.jpg
+END:VEVENT
+END:VCALENDAR

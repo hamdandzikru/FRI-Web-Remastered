@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-f376b8ae6217d18ca5ebcc8b402b63a1@sie.telkomuniversity.ac.id
+DTSTART:20200619T010000Z
+DTEND:20200619T110000Z
+DTSTAMP:20200311T093800Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Sidang Yudisium
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/sidang-yudisium-3/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,Sidang Yudisium
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/jpeg:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/IMG_2107.jpg
+END:VEVENT
+END:VCALENDAR

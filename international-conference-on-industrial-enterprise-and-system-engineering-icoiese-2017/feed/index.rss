@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: International Conference on Industrial, Enterprise, and System Engineering (ICoIESE) 2017	</title>
+	<atom:link href="https://sie.telkomuniversity.ac.id/international-conference-on-industrial-enterprise-and-system-engineering-icoiese-2017/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sie.telkomuniversity.ac.id/international-conference-on-industrial-enterprise-and-system-engineering-icoiese-2017/</link>
+	<description>FRI Juara</description>
+	<lastBuildDate>Sat, 20 Jan 2018 11:31:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.6</generator>
+</channel>
+</rss>

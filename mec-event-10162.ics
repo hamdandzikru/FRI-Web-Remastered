@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-11aa8d2c762f3b0b56e9e9ed8d4015f0@sie.telkomuniversity.ac.id
+DTSTART:20200803T010000Z
+DTEND:20200805T110000Z
+DTSTAMP:20200311T094500Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Pendaftaran Sidang Tugas Akhir Gelombang 4
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/pendaftaran-sidang-tugas-akhir-gelombang-4/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,Sidang Tugas Akhir
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/jpeg:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/pendaftaran-sidang.jpg
+END:VEVENT
+END:VCALENDAR

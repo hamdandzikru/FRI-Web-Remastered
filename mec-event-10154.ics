@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-54963e5ec11d76db476ac1c915c76dbf@sie.telkomuniversity.ac.id
+DTSTART:20200608T010000Z
+DTEND:20200617T110000Z
+DTSTAMP:20200311T093100Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Ujian Akhir Semester (UAS) S2
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/ujian-akhir-semester-uas-s2/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,UAS
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/png:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/exam.png
+END:VEVENT
+END:VCALENDAR

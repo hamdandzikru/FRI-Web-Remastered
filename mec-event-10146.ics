@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+PRODID:-//WordPress - MECv5.2.1//EN
+X-WR-CALNAME:WordPress
+X-ORIGINAL-URL:https://sie.telkomuniversity.ac.id/
+BEGIN:VEVENT
+UID:MEC-f52a7b2610fb4d3f74b4106fb80b233d@sie.telkomuniversity.ac.id
+DTSTART:20200427T010000Z
+DTEND:20200428T110000Z
+DTSTAMP:20200311T090100Z
+CREATED:20200311
+LAST-MODIFIED:20200320
+SUMMARY:Pendaftaran Sidang Tugas Akhir Gelombang 1
+DESCRIPTION:
+URL:https://sie.telkomuniversity.ac.id/events/pendaftaran-tugas-akhir-periode-1/
+ORGANIZER;CN=Fakultas Rekayasa Industri:MAILTO:sekretariatfri@telkomuniversity.ac.id
+CATEGORIES:Kalender Akademik,Sidang Tugas Akhir
+LOCATION:Gedung Karang
+ATTACH;FMTTYPE=image/jpeg:https://sie.telkomuniversity.ac.id/wp-content/uploads/2020/03/registration.jpg
+END:VEVENT
+END:VCALENDAR
