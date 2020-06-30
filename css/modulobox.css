@@ -1,0 +1,914 @@
+/*
+ *
+ * Plugin Name: ModuloBox
+ * Plugin URI: https://www.theme-one.com/modulobox/
+ * Author: Themeone
+ * Author URI: https://www.theme-one.com/
+ * Description: a pure JavaScript and touchable lightbox
+ * Version: 1.3.0
+ * Tags: lightbox, touch, swipe, image, video, iframe, html
+ *
+ * Copyright (C) 2017 Themeone - All Rights Reserved
+ *
+ */
+
+
+/* ============================================================
+   SUMMARY
+/* ============================================================
+	
+	00. Main containers
+	01. SVG icons URL
+	02. Top Bar
+	03. Bottom Bar
+	04. Caption
+	05. Item
+	06. Video/Iframe
+	07. Counter
+	08. Timer
+	09. Loader
+	10. Share tooltip
+	11. Buttons
+	12. Thumbnails
+	13. Media Queries
+
+/* ============================================================
+   00. Main containers
+/* ============================================================ */
+
+.mobx-holder {
+	position: fixed;
+	overflow: hidden;
+	z-index: 99999;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	will-change: opacity, visibility;
+	box-sizing: border-box;
+	-ms-touch-action: none;
+	touch-action: none;
+	pointer-events: none;
+	-webkit-text-size-adjust: 100%;
+	-webkit-backface-visibility: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-transition: opacity .4s ease; /*** prevent issue on old Safari version ***/
+	transition: opacity .4s ease, visibility .4s ease;
+}
+.mobx-holder:-webkit-full-screen {
+	background-color: transparent;
+}
+.mobx-holder * {
+	box-sizing: border-box;
+}
+.mobx-holder svg {
+	pointer-events: none;
+}
+.mobx-open {
+	pointer-events: auto;
+	visibility: visible;
+	opacity: 1;
+}
+.mobx-rtl {
+	direction: rtl;
+}
+.mobx-slider {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 1;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-ms-touch-action: none;
+	touch-action: none;
+	-webkit-transition: opacity 0.45s ease;
+	transition: opacity 0.45s ease;
+}
+.mobx-hide {
+	opacity: 0;
+	-webkit-transition: none;
+	transition: none;
+}
+.mobx-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	will-change: opacity;
+	transform: translateZ(0);
+	background-color: rgba(0,0,0,0.9);;
+}
+.mobx-ui:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	will-change: opacity;
+	background: rgba(0,0,0,0.4);
+	-webkit-transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+	transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+}
+.mobx-open-tooltip .mobx-ui:after {
+	opacity: 1;
+	visibility: visible;	
+}
+
+/* ============================================================
+   01. SVG icons URL
+/* ============================================================ */
+
+.mobx-video:before,
+.mobx-video:after,
+.mobx-thumb-video:after,
+.mobx-ui button,
+.mobx-share-tooltip *:after {
+	background-image: url(../icons/modulobox.svg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+/* ============================================================
+   02. Top Bar
+/* ============================================================ */
+
+.mobx-top-bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	will-change: transform;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
+}
+.mobx-idle .mobx-top-bar,
+.mobx-will-close .mobx-top-bar,
+.mobx-holder:not(.mobx-open) .mobx-top-bar {
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+/* ============================================================
+   03. Bottom Bar
+/* ============================================================ */
+
+.mobx-bottom-bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	will-change: transform;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
+}
+.mobx-panzoom .mobx-bottom-bar,
+.mobx-will-close .mobx-bottom-bar,
+.mobx-holder:not(.mobx-open) .mobx-bottom-bar {
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+/* ============================================================
+   04. Caption
+/* ============================================================ */
+
+.mobx-caption {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	pointer-events: none;
+}
+.mobx-caption-inner {
+	max-width: 420px;
+	margin: 0 auto;
+	pointer-events: auto;
+	cursor: default;
+}
+.mobx-title {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 14px 10px 12px;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	text-align: center;
+	color: #eeeeee;
+}
+.mobx-desc {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 14px 10px 12px;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	text-align: center;
+	color: #bbbbbb;
+}
+.mobx-title + .mobx-desc {
+	margin: -6px 0 0 0;
+	padding: 0 10px 10px;
+}
+
+/* ============================================================
+   05. Item
+/* ============================================================ */
+
+.mobx-item,
+.mobx-item-inner {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	touch-action: none;
+	transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+.mobx-img,
+.mobx-panzoom .mobx-item {
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+	cursor: -webkit-grab;
+}
+.mobx-dragging .mobx-item * {
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+}
+.mobx-img,
+.mobx-html,
+.mobx-video,
+.mobx-iframe,
+.mobx-error {
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 0;
+	max-width: none;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	will-change: opacity;
+	visibility: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+	-webkit-transition: opacity 0.35s ease;
+	transition: opacity 0.35s ease;
+}
+.mobx-media-loaded {
+	opacity: 1;
+	visibility: visible;
+}
+.mobx-error,
+.mobx-html-inner {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.mobx-error {
+	width: 100%;
+	height: auto;
+	padding: 20px 60px;
+	color: #bbbbbb;
+	pointer-events: none;
+	text-align: center;
+}
+.mobx-html {
+	pointer-events: none;
+}
+.mobx-html-inner {
+	position: relative;
+	display: inline-block;
+	overflow: auto;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	pointer-events: auto;
+}
+
+/* ============================================================
+   06. Video/Iframe
+/* ============================================================ */
+
+.mobx-video {
+	cursor: pointer;
+	background: rgba(255,255,255,0.1);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mobx-video.mobx-playing {
+	background: none;
+	background-image: none !important;
+}
+.mobx-video:before,
+.mobx-video:after {
+	position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: -44px 0 0 -44px;
+    border: 4px solid #fff;
+    border-radius: 100%;
+    background-size: 175px;
+    background-position: 28px -414px;
+	box-sizing: content-box;
+}
+.mobx-video.mobx-loading:before {
+	border-color: transparent;
+}
+.mobx-video:after {
+	opacity: 0;
+	visibility: hidden;
+	background-image: none;
+	background-color: transparent;
+	border-color: transparent;
+	border-left-color: #fff;
+}
+.mobx-video.mobx-loading:after {
+	opacity: 1;
+	visibility: visible;
+	-webkit-animation: mobx-load 1.1s infinite linear;
+	animation: mobx-load 1.1s infinite linear;	
+}
+.mobx-video.mobx-playing:before,
+.mobx-video.mobx-playing:after {
+	opacity: 0;
+}
+.mobx-video video,
+.mobx-video iframe,
+.mobx-video .mejs-video {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	opacity: 0;
+	background: rgba(255,255,255,0.065);
+	pointer-events: none;
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
+}
+.mobx-video iframe {
+	background: none;
+}
+.mobx-video.mobx-playing video,
+.mobx-video.mobx-playing .mejs-video,
+.mobx-video.mobx-playing iframe {
+	opacity: 1;
+	pointer-events: auto;
+}
+/*** hide fullscreen button on webkit browsers to prevent issue ***/
+.mobx-fullscreen video::-webkit-media-controls-fullscreen-button,
+.mobx-fullscreen .mejs-fullscreen-button {
+	display: none;
+}
+/*** Safari still not fix this issue ***/
+:-webkit-full-screen-ancestor:not(iframe) {
+	will-change: auto !important;
+}
+
+/* ============================================================
+   07. Counter
+/* ============================================================ */
+
+.mobx-counter {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 44px;
+	font-size: 13px;
+	line-height: 44px;
+	color: #ffffff;
+	opacity: 0.75;
+	margin: 0 10px;
+	letter-spacing: 0.6px;
+}
+.mobx-rtl .mobx-counter {
+	float: right;
+}
+
+/* ============================================================
+   08. Timer
+/* ============================================================ */
+
+.mobx-timer {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin: 10px 0 10px 5px;
+	opacity: 0;
+	will-change: opacity;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+}
+.mobx-rtl .mobx-timer {
+	float: right;
+}
+.mobx-autoplay .mobx-timer {
+	opacity: 1;
+}
+
+/* ============================================================
+   09. Loader
+/* ============================================================ */
+
+.mobx-loader {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: 50%;
+	margin: -15px 0 0 -15px;
+	outline: 1px solid transparent;
+	border-radius: 50%;
+	border-width: 3px;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: rgba(255,255,255,.2);
+	border-left: 3px solid #fff;
+	-webkit-animation: mobx-load 1.1s infinite linear;
+	animation: mobx-load 1.1s infinite linear;
+}
+@-webkit-keyframes mobx-load {
+  0% {
+	-webkit-transform: rotate(0deg);
+  }
+  100% {
+	-webkit-transform: rotate(360deg);
+  }
+}
+@keyframes mobx-load {
+  0% {
+	transform: rotate(0deg);
+  }
+  100% {
+	transform: rotate(360deg);
+  }
+}
+
+/* ============================================================
+   10. Share Tooltip
+/* ============================================================ */
+
+.mobx-share-tooltip {
+	position: absolute;
+	display: block;
+	z-index: 2;
+	width: 120px;
+	top: 50px;
+	opacity: 0;
+	visibility: hidden;
+	background: #ffffff;
+	will-change: transform;
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
+	transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
+}
+.mobx-share-tooltip:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	top: -12px;
+	right: 14px;
+	border: 6px solid transparent;
+	border-bottom-color: #f9fafb;
+}
+.mobx-share-tooltip[data-position="left"]:before {
+	left: 14px;
+	right: auto;
+}
+.mobx-open-tooltip .mobx-share-tooltip {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.mobx-share-tooltip span {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	color: #777777;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center; 
+	background: #f9fafb;
+	box-shadow: inset 0 -2px 8px rgba(0,0,0,0.03);
+}
+
+/* ============================================================
+   11. Buttons
+/* ============================================================ */
+
+.mobx-ui button,
+.mobx-share-tooltip *:after {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	cursor: pointer;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-appearance: none;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+}
+.mobx-ui button:hover,
+.mobx-share-tooltip button:hover:after {
+	opacity: 1;
+}
+.mobx-share-tooltip button:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.mobx-share-tooltip button {
+	float: left;
+}
+.mobx-rtl .mobx-share-tooltip button {
+	float: right;
+}
+.mobx-top-bar button {
+	float: right;
+	margin: 2px;
+	opacity: 0.75;
+}
+.mobx-rtl .mobx-top-bar button {
+	float: left;
+}
+button.mobx-prev,
+button.mobx-next {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 44px;
+	height: 32px;
+	margin: 0 6px;
+	opacity: 0.75;
+	background-color: rgba(0,0,0,0.4);
+	will-change: transform;
+	-webkit-transform: translateX(0) translateY(-50%);
+	transform: translateX(0) translateY(-50%);
+	-webkit-transition: opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+button.mobx-next {
+	left: auto;
+	right: 0;
+}
+.mobx-idle .mobx-prev,
+.mobx-will-close .mobx-prev,
+.mobx-holder:not(.mobx-open) .mobx-prev {
+	-webkit-transform: translateX(-120%) translateY(-50%);
+	transform: translateX(-120%) translateY(-50%);
+}
+.mobx-idle .mobx-next,
+.mobx-will-close .mobx-next,
+.mobx-holder:not(.mobx-open) .mobx-next {
+	-webkit-transform: translateX(120%) translateY(-50%);
+	transform: translateX(120%) translateY(-50%);
+}
+.mobx-holder[data-zoom="false"] .mobx-zoom,
+.mobx-holder[data-zoom="false"] .mobx-zoom:hover,
+.mobx-holder[data-download="false"] .mobx-download,
+.mobx-holder[data-download="false"] .mobx-download:hover {
+	opacity: 0.45;
+	cursor: default;
+}
+.mobx-prev {
+	left: 0;
+	background-position: 10px 4px;
+}
+.mobx-next {
+	right: 0;
+	background-position: 10px -40px;
+}
+.mobx-close {
+	background-position: 12px -76px;
+}
+.mobx-zoom {
+	background-position: 12px -120px;
+}
+.mobx-panzoom .mobx-zoom {
+	background-position: 12px -164px;
+}
+.mobx-play {
+	background-position: 12px -208px;
+}
+.mobx-autoplay .mobx-play {
+	background-position: 12px -252px;
+}
+.mobx-download {
+	background-position: 12px -296px;
+}
+.mobx-share {
+	background-position: 12px -340px;
+}
+.mobx-fullscreen {
+	background-position: 12px -384px;
+}
+.mobx-fullscreen .mobx-fullscreen {
+	background-position: 12px -428px;
+}
+.mobx-facebook {
+	background-position: -32px -472px;	
+}
+.mobx-facebook:after {
+	background-color: #3b5998;
+	background-position: 12px -472px;	
+}
+.mobx-twitter {
+	background-position: -32px -516px;
+}
+.mobx-twitter:after {
+	background-color: #1da1f2;
+	background-position: 12px -516px;	
+}
+.mobx-googleplus {
+	background-position: -32px -560px;
+}
+.mobx-googleplus:after {
+	background-color: #dd4b39;
+	background-position: 12px -560px;	
+}
+.mobx-pinterest {
+	background-position: -32px -604px;
+}
+.mobx-pinterest:after {
+	background-color: #bd081c;
+	background-position: 12px -604px;	
+}
+.mobx-linkedin {
+	background-position: -32px -648px;
+}
+.mobx-linkedin:after {
+	background-color: #0077b5;
+	background-position: 12px -648px;	
+}
+.mobx-reddit {
+	background-position: -32px -692px;
+}
+.mobx-reddit:after {
+	background-color: #ff4500;
+	background-position: 12px -692px;	
+}
+.mobx-tumblr {
+	background-position: -32px -736px;
+}
+.mobx-tumblr:after {
+	background-color: #35465c;
+	background-position: 12px -736px;	
+}
+.mobx-blogger {
+	background-position: -32px -780px;
+}
+.mobx-blogger:after {
+	background-color: #f57d00;
+	background-position: 12px -780px;	
+}
+.mobx-buffer {
+	background-position: -32px -824px;
+}
+.mobx-buffer:after {
+	background-color: #323b43;
+	background-position: 12px -824px;	
+}
+.mobx-digg {
+	background-position: -34px -868px;
+}
+.mobx-digg:after {
+	background-color: #005be2;
+	background-position: 10px -868px;	
+}
+.mobx-stumbleupon {
+	background-position: -32px -912px;
+}
+.mobx-stumbleupon:after {
+	background-color: #eb4924;
+	background-position: 12px -912px;	
+}
+.mobx-evernote {
+	background-position: -32px -956px;
+}
+.mobx-evernote:after {
+	background-color: #2dbe60;
+	background-position: 12px -956px;	
+}
+
+/* ============================================================
+   12. Thumbnails
+/* ============================================================ */
+
+.mobx-thumbs-holder,
+.mobx-thumbs-inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+.mobx-thumbs-holder {
+	position: relative;	
+}
+.mobx-thumb {
+	position: absolute;
+	margin: 0;
+	will-change: left;
+	background-color: rgb(25, 25, 25);
+	outline: 0 solid transparent;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-transition: background-color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+.mobx-thumb:hover {
+	background-color: rgb(50, 50, 50);
+}
+.mobx-thumb:after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.0001;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	border: 2px solid #ffffff;
+}
+.mobx-active-thumb:after {
+	opacity: 0.9999;
+}
+.mobx-thumb-bg {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	visibility: hidden;
+	opacity: 0;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	will-change: opacity, visibility;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: opacity 0.25s ease, visibility 0.25s ease;
+	transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.mobx-thumb-loaded {
+	visibility: visible;
+	opacity: 0.5;
+}
+.mobx-thumb-bg:hover,
+.mobx-active-thumb .mobx-thumb-loaded {
+	opacity: 1;
+}
+.mobx-thumbs-holder {
+	cursor: move;
+	cursor: grab;
+	cursor: -webkit-grab;
+}
+.mobx-dragging .mobx-thumbs-holder {
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+}
+.mobx-thumb-video:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	margin: -20px auto 0 auto;
+	background-position: 12px -208px;
+}
+
+/* ============================================================
+   13. Media Queries
+/* ============================================================ */
+
+@media screen and (max-height: 800px) {
+	.mobx-video:before,
+	.mobx-video:after {
+		width: 60px;
+		height: 60px;
+		margin: -34px 0 0 -34px;
+		background-size: 125px;
+		background-position: 22px -294px;
+	}
+}
+@media screen and (max-height: 360px) {
+	.mobx-video:before,
+	.mobx-video:after {
+		width: 40px;
+		height: 40px;
+		margin: -24px 0 0 -24px;
+		background-size: initial;
+		background-position: 14px -208px;
+		border-width: 3px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.mobx-timer {
+		margin: 10px 0;
+	}
+	.mobx-top-bar button {
+		margin: 2px 0;
+	}
+}
+@media screen and (max-width: 360px) {
+	.mobx-counter {
+		margin: 0 6px 0 4px;
+	}
+	.mobx-top-bar button {
+		width: 34px;
+	}	
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)   and (max-width: 380px),
+only screen and (   min--moz-device-pixel-ratio: 2)   and (max-width: 380px),
+only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-width: 380px),
+only screen and (        min-device-pixel-ratio: 2)   and (max-width: 380px) { 
+	.mobx-top-bar button {
+		width: 40px;
+	}
+}
+
+/*
+	Custom lightbox skin for theme
+*/
+body.lightbox-white .mobx-overlay {
+	background-color: #ffffff;
+}
+
+body.lightbox-white .mobx-top-bar {
+	background: #222222;
+}
+
+body.lightbox-white .mobx-bottom-bar {
+	background: transparent;
+}
+
+body.lightbox-white .mobx-thumb {
+	background-color: #ffffff;
+}
+
+body.lightbox-white .mobx-title {
+	color: #222;
+}
+
+body.lightbox-white .mobx-desc {
+	color: #222;
+}

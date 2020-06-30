@@ -1,0 +1,228 @@
+#option_btn {
+	position: fixed;
+	top: 150px;
+	right: -2px;
+	cursor: pointer;
+	z-index: 9;
+	background: #fff;
+	border-right: 0;
+	width: 40px;
+	height: 90px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	border-radius: 5px 0px 0px 5px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+	line-height: 1.4;
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: -webkit-transform 400ms ease;
+	-moz-transition: transform 600ms ease;
+	-o-transition: -o-transform 600ms ease;
+	transition: transform 600ms ease;
+}
+
+#option_btn.open {
+	-webkit-transform: translate(-251px, 0px);
+	-moz-transform: translate(-251px, 0px);
+	transform: translate(-251px, 0px);
+}
+
+#option_btn span {
+	font-size: 15px;
+	line-height: 31px;
+	color: #222;
+}
+
+#option_wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 250px;
+	background: #fff;
+	z-index: 99999;
+	box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.1);
+	overflow: auto;
+	height: 100%;
+	color: #222;
+	line-height: 1.5;
+	font-size: 14px;
+	-webkit-transform: translate(251px, 0px);
+	-moz-transform: translate(251px, 0px);
+	transform: translate(251px, 0px);
+	-webkit-transition: -webkit-transform 600ms ease;
+	-moz-transition: transform 600ms ease;
+	-o-transition: -o-transform 600ms ease;
+	transition: transform 600ms ease;
+}
+
+#option_wrapper.open {
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+#option_wrapper h4 {
+	color: #000;
+}
+
+#option_wrapper:hover {
+	overflow-y: auto;
+}
+
+.demo_color_list {
+	list-style: none;
+	display: block;
+	margin: 30px 0 10px 0;
+}
+
+.demo_color_list>li {
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	height: auto;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 11px;
+	margin-bottom: 15px;
+}
+
+.demo_color_list>li .item_content-wrapper {
+	width: 100%;
+}
+
+.demo_color_list>li .item_content-wrapper .item_content {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.demo_color_list>li .item_content-wrapper .item_content .item_thumb {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	line-height: 0;
+	border-radius: 250px;
+	margin: auto;
+}
+
+.demo_list {
+	list-style: none;
+	display: block;
+	margin: 10px 0 0 0;
+}
+
+.demo_list li {
+	float: left;
+	position: relative;
+	margin-bottom: 15px;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.demo_list li img {
+	max-width: 100%;
+	height: auto;
+	line-height: 0;
+}
+
+.demo_list li:hover img {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-moz-filter: blur(2px);
+}
+
+.demo_list li:hover .demo_thumb_hover_wrapper {
+	opacity: 1;
+}
+
+.demo_thumb_hover_wrapper {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	visibility: visible;
+	width: 100%;
+	line-height: normal;
+}
+
+.demo_thumb_hover_inner {
+	display: table;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.demo_thumb_desc {
+	display: table-cell;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	padding: 0 10% 0 10%;
+	box-sizing: border-box;
+}
+
+#option_wrapper .inner h6 {
+	margin: 10px 0 0 0;
+}
+
+.demo_thumb_hover_inner h6 {
+	color: #fff !important;
+	line-height: 20px;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.demo_thumb_desc .button.white {
+	margin-top: 15px;
+}
+
+.demo_thumb_desc .button.white:hover {
+	background: #fff !important;
+	color: #000 !important;
+	border-color: #fff !important;
+}
+
+body.admin-bar #option_wrapper .inner {
+	padding-top: 60px;
+}
+
+#option_wrapper .inner {
+	padding: 30px 15px 0 15px;
+	box-sizing: border-box;
+}
+
+.demotip {
+	display: block;
+}
+
+.demo_lang {
+	display: block;
+	padding: 20px 10px 20px 10px;
+	background: #ebebeb;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.demo_lang:hover {
+	background: #3d64ff;
+	color: #fff;
+}
